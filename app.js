@@ -28,8 +28,8 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/block', routes.block);
-app.get('/unblock', routes.unblock);
+app.get('/enablewan', routes.enablewan);
+app.get('/disablewan', routes.disablewan);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

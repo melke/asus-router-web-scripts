@@ -28,10 +28,10 @@ Copy modules/config.template.js to modules/config.js and update the settings in 
 cd casperjs
 #
 # Disable WAN access
-casperjs disable.js username password routerip
+casperjs wan.js disable username password
 #
 # Enable WAN access
-casperjs enable.js username password routerip
+casperjs wan.js enable username password
 #
 ```
 
